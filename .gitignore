@@ -10,6 +10,14 @@
 [Ll]ogs/
 [Mm]emoryCaptures/
 
+Library
+TerrainSampleAssets/
+Temp
+
+find . -size +100M | cat >> .gitignore
+
+forfiles /s /c "cmd /q /c if @fsize GTR 1073741824 echo @relpath" >> .gitignore
+
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
 
