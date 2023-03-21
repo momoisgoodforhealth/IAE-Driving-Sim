@@ -21,6 +21,8 @@ public class vehi_move : MonoBehaviour
     public float maxMotorTorque = 80f;
     public float currentSpeed;
     public float maxSpeed=100f;
+
+    public bool turn = false;
     //  public bool turn = false;
     // The target (cylinder) position.
     //   private Transform target;
